@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
    Widget build(BuildContext context) {
      return const Scaffold();
      return Scaffold(
-       backgroundColor: Colors.grey[200],
+       backgroundColor: const Color.fromARGB(255, 241, 207, 207),
        body: Center(
          child: Card(
            shape: RoundedRectangleBorder(

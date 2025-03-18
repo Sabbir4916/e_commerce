@@ -24,7 +24,7 @@ import 'package:e_commerce_app/screens/home/page/home_screen.dart';
    Widget build(BuildContext context) {
      return Scaffold(
        appBar: FAppBar(
-         title: 'Mega Shop',
+         title: 'MegaShop',
          firstIcon: Iconsax.notification_bing_outline,
          //backButton: true,
        ),
