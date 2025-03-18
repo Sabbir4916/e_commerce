@@ -1,4 +1,3 @@
-import 'package:e_commerce_flutter/screens/home/page/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
@@ -15,7 +14,10 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _homeScreens = [
-    HomeScreen(),
+    Container(
+      height: double.infinity,
+      color: Colors.amber,
+    ),
     Container(
       height: double.infinity,
       color: Colors.red,
@@ -29,11 +31,6 @@ class _HomeState extends State<Home> {
       color: Colors.green,
     ),
   ];
-  void _onTapMethod(int index) {
-    setState(() {
-      _currentIndex = index;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,8 +41,7 @@ class _HomeState extends State<Home> {
       ),
       body: _homeScreens[_currentIndex],
       bottomNavigationBar: FBottomBar(
-        currentIndex: _currentIndex,
-        ontapMethod: _onTapMethod,
+        currentIndex: 0,
       ),
     );
   }
